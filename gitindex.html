@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- load in google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <!-- load in styles -->
+    <title>Cyber Crimes</title>
+
+    <style>
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+html {
+font-size: 62.5%;
+scroll-behavior: smooth;
+}
+
+/* Below are the general styles - linking different fonts to their elements. */
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    color:black;
+    background-color:#a8a6c7;
+    /* background-color: #14a098; */
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* nav */
+
+.topnav{
+    position:sticky;
+    top:0;
+}
+
+.allyears,
+.firstfour,
+.nextfour{
+    display: flex;
+}
+
+.topnav .sub-menu {
+    list-style: none;
+    display: flex;
+    margin-bottom:2rem;
+    margin-left:32rem;
+}
+
+.topnav a {
+    text-decoration: none;
+    font-size:1.8rem;
+    padding: 0.8rem;
+    background-color:#4c3e66;
+    color:white;
+}
+
+.allyears a:hover {
+    background-color:white;
+    color:black;  
+}
+
+
+/* below are the styles for the page */
+
+.container{
+    padding:3rem;
+    margin-left:-2.3rem; 
+}
+
+
+.headnews{
+    background-color:#4c3e66;
+    color:white;
+    text-align: center;
+    font-size: 2rem;
+    margin-left:7rem;
+    margin-top:-5rem;
+    padding: 0.8rem;
+    position:fixed;
+    font-weight:300;
+}
+
+.twoBoxes {
+    display:flex;
+}
+
+.firstBox {
+    border: 3px solid #CB2D6F;
+    background-color: #cccccc;
+    width: 29rem;
+    height: 88%;
+    padding:2rem;
+    position:fixed;
+    overflow: auto;
+}
+
+.articleimage{
+    width:24.4rem;
+    height:15rem;
+    margin-bottom:-1rem;
+}
+
+.articlename {
+    text-align: center;
+    font-size:2rem;
+    padding-top:1rem;
+    padding-bottom:0.5rem;
+    font-weight:300;
+    background-color:#4c3e66;
+    color:white;
+}
+
+.metadet{
+    display:flex;
+    justify-content: space-between;
+    font-size:1.5rem;
+    margin-bottom:2rem;
+    padding-bottom:1rem;
+    border-bottom: 2px solid #CB2D6F;
+}
+
+
+.secondBox{
+    /* width:80rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* position:absolute; */
+    margin-left:30rem;
+}
+
+.secondBox .blog{
+    margin-bottom:1rem;
+}
+
+.repeat{
+    padding:2rem;
+    margin-bottom:1rem;
+    border:1px solid black;
+    border: 3px solid #CB2D6F;
+    background-color: #cccccc;
+    width:104%;
+}
+
+.tim{
+    display:flex;
+    justify-content:space-between;
+}
+
+.tim img {
+    width:10rem;
+    height:5rem;
+    background-color:black;
+
+}
+
+.title{
+    padding-bottom:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-size:3.5rem;
+    font-weight: 700;
+    background-color:black;
+    color:white;
+}
+
+.user {
+    font-size:2rem;
+    color:red;
+}
+
+.datest{
+    padding-bottom:1rem;
+    margin-top:1rem;
+    font-size:2.2rem;
+}
+
+.daterp{
+    margin-top:1rem;
+    font-size:2.2rem;
+}
+
+.stolen{
+    padding-bottom:1rem;
+    font-size:2.2rem;
+    word-wrap: break-word;
+    word-spacing:2px;
+    width:70%;
+}
+
+.blog .post{
+    padding-bottom:1rem;
+    font-size:2.2rem;
+    word-spacing:2px;
+}
+
+.bold {
+font-weight: 700;
+}
+
+/* NEW MEDIA */
+
+@media (max-width: 890px) {
+
+.container{
+margin-left:0.5rem;
+}
+
+.topnav .sub-menu {
+padding:1rem;
+margin:0rem;
+justify-content: center;
+}
+
+.topnav a {
+font-size:2.4rem;
+padding: 1rem;
+}
+
+.headnews {
+display: none;
+}
+
+.firstBox {
+display: none;
+}
+
+.secondBox {
+margin:1rem;
+}
+
+.repeat {
+width: 100%;
+}
+
+.title{
+font-size:4rem;
+}
+
+.user {
+font-size:2rem;
+}
+
+.datest,
+.daterp,
+.stolen{
+font-size:2.3rem;
+}
+
+.stolen {
+    width: 100%;
+}
+
+.blog .post{
+font-size:2.3rem;
+}
+
+} 
+
+@media (max-width: 768px) { 
+
+.topnav .sub-menu {
+background-color:#11091E;;
+width:100%;
+}
+
+.topnav .allyears{
+display: flex;
+flex-direction: column;
+padding: 1rem;
+}
+
+.firstfour {
+margin-bottom:4rem;
+margin-left:1rem;
+}
+
+.nextfour {
+margin-left:7rem;
+}
+
+.prompt {
+font-size:2rem;
+padding-top: 4rem;       
+}
+
+
+}
+
+@media (max-width: 600px) { 
+
+
+.topnav a{
+padding: 0.5rem;
+}
+
+.firstfour {
+margin-bottom:4rem;
+margin-left:1rem;
+}
+
+.nextfour {
+margin-left:2rem;
+}
+
+
+.repeat {
+width: 112.5%;
+margin-left:-3rem;
+
+}
+
+
+}
+
+@media (max-width: 560px) { 
+
+.topnav a{
+font-size:2rem;
+}
+
+.topnav .sub-menu {
+width: 100%;
+
+}
+
+.prompt {
+font-size:2rem;
+padding-top: 4rem;       
+}
+
+.repeat {
+width: 109.6%;
+}
+
+}
+
+@media (max-width: 546px) {
+
+.topnav .sub-menu {
+margin-left:-0.4rem;
+}
+
+.tim img {
+display: none;
+}
+
+.secondBox {
+padding: 1rem;
+padding-top:0rem;
+}  
+
+.repeat{
+    margin-left:-2.3rem;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.topnav .sub-menu {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav a {
+    padding: 0.7rem;
+}
+
+.prompt li{
+    margin-top:-3rem;
+    text-align:left;
+}
+
+.prompt a {
+    font-size:2.3rem;
+}
+
+.firstfour {
+    margin-left:-1rem;
+    margin-top:0.7rem;
+    
+}
+
+.nextfour {
+    margin-left:-1rem;
+    margin-top:-2rem;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.repeat {
+    width: 95%;
+}
+
+}
+
+@media (max-width: 410px) {
+
+.repeat {
+    width: 92.5%;
+}
+
+.topnav .sub-menu {
+    width: 93.5%;
+}   
+
+}
+
+@media (max-width: 384px) {
+
+.secondBox {
+    padding:0rem;
+    width: 112%;
+    margin:-3rem;
+    margin-top:1rem;
+}
+
+.repeat {
+    width: 100%;
+    margin-left:0.8rem;
+}
+
+.topnav .sub-menu {
+    width: 112%;
+    margin-left:-2.2rem;
+}
+
+
+}
+
+    </style>
+
+</head>
+<body>
+
+    <section class="container">
+
+        <div class="wrapper">
+
+        <nav class="topnav">
+
+            <ul class="sub-menu">
+
+                    <section class="prompt">
+
+                        <li><a>Choose a year<span> ▶ </span></a></li>
+
+                    </section>
+
+                    <section class="allyears">
+
+                        <div class="firstfour">
+                            <li class="three"><a>2013</a></li>
+                            <li class="four"><a>2014</a></li>
+                            <li class="five"><a>2015</a></li>
+                            <li class="six"><a>2016</a></li>
+                        </div>
+
+                        <div class="nextfour">
+                            <li class="seven"><a>2017</a></li>
+                            <li class="eight"><a>2018</a></li>
+                            <li class="nine"><a>2019</a></li>
+                            <li class="twenty"><a>2020</a></li>
+                        </div>
+
+                    </section>
+            </ul>								
+
+        </nav>
+        
+            <section class="twoBoxes">
+
+                    <h1 class="headnews">Cybersecurity News</h1>
+
+                <section class="firstBox">
+        
+                    <section class="news">
+
+
+                    </section>
+        
+                </section>
+        
+                <section class="secondBox"> 
+        
+                    <section class="blog">
+
+                    </section>
+        
+                </section>
+
+        </section>
+
+    </div>
+    
+    </section>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+<script>
+    $(function() {
+// Below is the pawned api
+
+const app = {};
+
+$(function() {
+    app.init(); 
+});
+
+app.init = function() { 
+    app.getapp();
+};
+
+app.getapp = () => {
+    $.ajax({
+            url: 'http://proxy.hackeryou.com', 
+            data:{
+                reqUrl: 'https://haveibeenpwned.com/api/v3/breaches', 
+                method: 'GET', 
+                format: 'json'
+                }}).then((result) => { 
+
+                    app.displayapp(result)      
+                    let alldata = (result.reverse()); 
+                    
+                    alldata.forEach((obj) => {
+                        
+                    let date = obj.AddedDate;
+                    let newdate = date.slice(0, 10);
+                    
+                    let stolenitems = obj.DataClasses;
+                    let newstolenitems = stolenitems.join(', ');
+
+                    let title = obj.Title;
+                    let newtitle = title.replace(/([a-zA-Z])[0-9](?=[A-Z])/g, '$1 ');
+                    // this gets puts a dash between words because of the spsace between the 1 and the comma.
+                    
+                        
+                    $('.blog').append (`<div class="repeat">
+                                        <div class="tim">
+                                            <h1 class="title">${newtitle} <span class="user">(User Data Stolen)</span> </h1>
+                                            <img class="image" src=${obj.LogoPath}>
+                                        </div>
+                                        <h2 class="daterp"><span class="bold">Theft was reported on: </span>${newdate}</h2>
+                                        <h2 class="datest"><span class="bold">Data was stolen on: </span>${obj.BreachDate}</h2>
+                                        <h3 class="stolen"><span class="bold">The hackers stole: </span> ${newstolenitems}</h3>
+                                        <p class="post"><span class="bold">Summary of the hack: </span> ${obj.Description}</p>
+                                        </div>`); 
+
+                    });     
+                });
+}  
+
+app.displayapp = function(data) { 
+data.sort((a, b) => (a.AddedDate > b.AddedDate) ? 1 : -1)
+}
+
+
+
+// Below is the news api
+
+
+
+const API_KEY = "2fd72db6e57242878a99f0165fe72b81";
+var url = "https://newsapi.org/v2/everything?language=en&q=hacked&pageSize=100&sortBy=relevancy&apiKey="+API_KEY;
+
+const news = {};
+
+$(function() {
+    news.init(); 
+});
+
+news.init = function() { 
+    news.getap();
+};
+
+news.getap = () => {
+    $.ajax({
+            url: url, 
+            data:{
+                method: 'GET', 
+                format: 'json'
+                }}).then((result) => { 
+                let alldata = (result['articles']); 
+                let title_sum =	alldata.forEach((obj) => {  
+
+                let pub = obj.publishedAt;
+                let newpub = pub.slice(0, 10);
+
+                $('.news').append (`<div class="article"> 
+                                    <a href=${obj.url}>
+                                    <img class="articleimage" src=${obj.urlToImage}>
+                                    </a>
+                                    <h2 class= "articlename">${obj.title}</h2>
+                                    <div class="metadet">
+                                        <p>${newpub }</p> 
+                                        <p>${obj.source.name}</p>
+                                    </div> 
+                                    </div>`);
+
+        });
+    });
+}
+
+$( ".three" ).click(function() {
+
+    if ($(window).width() > 1158) {
+    $("html, body").animate({ scrollTop: "160000px" });
+    }
+
+    else if ($(window).width() <= 1158) {
+        $("html, body").animate({ scrollTop: "260000px" });
+    }
+
+});
+
+$( ".four" ).click(function() {
+
+    if ($(window).width() > 1158) {
+    $("html, body").animate({ scrollTop: "151000px" });
+    }
+
+    if ($(window).width() <= 1158) {
+    $("html, body").animate({ scrollTop: "176000px" });
+    }
+    
+    else if ($(window).width() <= 930) {
+        $("html, body").animate({ scrollTop: "190500px" });
+    }
+
+    else if ($(window).width() <= 834) {
+        $("html, body").animate({ scrollTop: "216000pxpx" });
+    }
+
+    else if ($(window).width() <= 768) {
+        $("html, body").animate({ scrollTop: "183000px" });
+    }
+
+    else if ($(window).width() <= 414) {
+        $("html, body").animate({ scrollTop: "189900px" });
+    }
+
+    else if ($(window).width() <= 360) {
+        $("html, body").animate({ scrollTop: "221500px" });
+    }
+    
+});
+
+
+$( ".five" ).click(function() {
+
+    $("html, body").animate({ scrollTop: "142000px" });
+    
+});
+
+$( ".six" ).click(function() {
+
+    $("html, body").animate({ scrollTop: "130500px" });
+    
+});
+
+$( ".seven" ).click(function() {
+
+    $("html, body").animate({ scrollTop: "93500px" });
+    
+});
+
+$( ".eight" ).click(function() {
+
+    $("html, body").animate({ scrollTop: "65000px" });
+    
+});
+
+$( ".nine" ).click(function() {
+
+    $("html, body").animate({ scrollTop: "38100px" });
+    
+});
+
+$( ".twenty" ).click(function() {
+
+    $("html, body").animate({ scrollTop: "0px" });
+    
+});
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- load in google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <!-- load in styles -->
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <title>Cyber Crimes 2020</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="container">
+
+            <div class="wrapper">
+    
+                <nav class="topnav">
+    
+                    <ul class="sub-menu">
+        
+                            <section class="prompt">
+        
+                                <li><a>Choose a year<span> ▶ </span></a></li>
+        
+                            </section>
+        
+                            <section class="allyears">
+        
+                                <div class="firstfour">
+                                    <li class="three"><a href="/2013_index.html">2013</a></li>
+                                    <li class="four"><a href="/2014_index.html">2014</a></li>
+                                    <li class="five"><a href="/2015_index.html">2015</a></li>
+                                    <li class="six"><a href="/2016_index.html">2016</a></li>
+                                </div>
+        
+                                <div class="nextfour">
+                                    <li class="seven"><a href="/2017_index.html">2017</a></li>
+                                    <li class="eight"><a href="/2018_index.html">2018</a></li>
+                                    <li class="nine"><a href="/2019_index.html">2019</a></li>
+                                    <li class="twenty"><a href="/2020_index.html">2020</a></li>
+                                </div>
+        
+                            </section>
+                    </ul>								
+    
+                </nav>
+            
+                <section class="twoBoxes">
+
+                    <h1 class="headnews">Cybersecurity Podcasts</h1>
+
+                    <section class="firstBox">
+            
+                        <section class="news">
+
+                            <a href="https://www.listennotes.com/podcasts/darknet-diaries-jack-rhysider-ztuNyvC2F_O/"> <img class="podcastimage" src="/assets/darknet-diaries.jpg"> </a>
+
+                            <a href="https://www.listennotes.com/podcasts/malicious-life-cybereason-iEIF-ZyBgRQ/"> <img class="podcastimage" src="/assets/malicious-life.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/security-now-mp3-twit-WLmHYEzM90y/"><img class="podcastimage" src="/assets/security-now.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/smashing-security-graham-cluley-carole-JrGubIqc0OE/"><img class="podcastimage" src="/assets/smashing-security.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/the-cyberwire-the-cyberwire-vKkUu8BsSbh/"><img class="podcastimage" src="/assets/the-cyberwire.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/the-privacy-security-osint-show-michael-6rPfc2eLyxt/"><img class="podcastimage" src="/assets/the-privacy-security.jpg"></a>
+
+                        </section>
+            
+                    </section>
+                
+                    <section class="secondBox"> 
+            
+                        <section class="blog">
+
+                        </section>
+            
+                    </section>
+        
+                </section>
+    
+            </div>
+        
+        </section>
+
+    </main>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+<script>
+
+    $(function() {
+    
+    const app = {};
+
+        $(function() {
+        app.init(); 
+        });
+
+        app.init = function() { 
+        app.getapp();
+        };
+
+        app.getapp = () => {
+            $.ajax({
+            url: 'http://proxy.hackeryou.com', 
+            data:{
+                    reqUrl: 'https://haveibeenpwned.com/api/v3/breaches/', 
+                    method: 'GET', 
+                    format: 'json'
+                    }}).then((result) => {
+
+                    app.displayapp(result)      
+                    let alldata = (result.reverse()); 
+
+                    alldata.forEach((obj) => {
+
+                    let stolenitems = obj.DataClasses;
+                    let newstolenitems = stolenitems.join(', ');
+
+                    let title = obj.Title;
+                    let newtitle = title.replace(/([a-zA-Z])[0-9](?=[A-Z])/g, '$1 ');
+
+                    let date = obj.AddedDate;
+                    let newdate = date.slice(0,10);
+                    let year = newdate.slice(0,4)
+
+
+                    if (year == 2020) {
+
+                    $('.blog').append (`<div class="repeat">
+                    <div class="tim">
+                    <h1 class="title">${newtitle} <span class="user">(User Data Stolen)</span> </h1>
+                    <img class="image" src=${obj.LogoPath}>
+                    </div>
+                    <h2 class="daterp"><span class="bold">Theft was reported on: </span>${newdate}</h2>
+                    <h2 class="datest"><span class="bold">Data was stolen on: </span>${obj.BreachDate}</h2>
+                    <h3 class="stolen"><span class="bold">The hackers stole: </span> ${newstolenitems}</h3>
+                    <p class="post"><span class="bold">Summary of the hack: </span> ${obj.Description}</p>
+                    </div>`); 
+
+        }
+
+        });     
+        });
+        }
+
+        app.displayapp = function(data) { 
+        data.sort((a, b) => (a.AddedDate > b.AddedDate) ? 1 : -1)
+        }
+    
+    
+    });
+</script>
+
+</body>
+</html>

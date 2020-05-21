@@ -1,0 +1,373 @@
+/* below are the styles for the page */
+
+.container{
+    padding:3rem;
+    margin-left:-2.3rem; 
+}
+
+
+.headnews{
+    color:#cccccc;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-left:5.5rem;
+    margin-top:-5.3rem;
+    padding: 1rem;
+    position:fixed;
+    font-weight:300;
+}
+
+.twoBoxes {
+    display:flex;
+}
+
+.firstBox {
+    width: 19.1rem;
+    height: 88%;
+    padding:2rem;
+    position:fixed;
+    overflow: auto;
+    margin-left:6rem;
+}
+
+.podcastimage{
+    width:15rem;
+    height:15rem;
+    margin-bottom:2rem;
+    filter: grayscale(1);
+}
+
+.secondBox{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left:30rem;
+}
+
+.secondBox .blog{
+    margin-bottom:1rem;
+}
+
+.repeat{
+    padding:2rem;
+    margin-bottom:1rem;
+    border:1px solid black;
+    background-color: #cccccc;
+    width:100%;
+}
+
+.tim{
+    display:flex;
+    justify-content:space-between;
+}
+
+.tim img {
+    width:10rem;
+    height:5rem;
+    background-color:black;
+    filter: grayscale(1);
+
+}
+
+.title{
+    padding-bottom:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-size:3.5rem;
+    font-weight: 700;
+    background-color:black;
+    color:#cccccc;
+}
+
+.user {
+    font-size:2rem;
+    color:red;
+}
+
+.datest{
+    padding-bottom:1rem;
+    margin-top:1rem;
+    font-size:2.2rem;
+}
+
+.daterp{
+    margin-top:1rem;
+    font-size:2.2rem;
+}
+
+.stolen{
+    padding-bottom:1rem;
+    font-size:2.2rem;
+    word-wrap: break-word;
+    word-spacing:2px;
+    width:70%;
+}
+
+.blog .post{
+    padding-bottom:1rem;
+    font-size:2.2rem;
+    word-spacing:2px;
+}
+
+.bold {
+font-weight: 700;
+}
+
+/* NEW MEDIA */
+
+@media (max-width: 960px) {
+
+    .firstBox {
+    width: 26rem;;
+    }  
+
+    .articleimage{
+    width:100%;
+    }   
+    .secondBox {
+    margin-left:27rem;
+    }
+
+    .topnav a {
+    padding:0.55rem 
+    }
+
+    .topnav .sub-menu{
+    margin-left:29rem;
+    }
+
+}
+
+/* NEW MEDIA */
+
+@media (max-width: 890px) {
+
+    .container{
+    margin-left:0.5rem;
+    }
+
+    .topnav .sub-menu {
+    padding:1rem;
+    margin:0rem;
+    justify-content: center;
+    }
+
+    .topnav a {
+    font-size:2.4rem;
+    padding: 1rem;
+    }
+
+    .headnews {
+    display: none;
+    }
+
+    .firstBox {
+    display: none;
+    }
+
+    .secondBox {
+    margin:1rem;
+    }
+
+    .repeat {
+    width: 100%;
+    }
+
+    .title{
+    font-size:4rem;
+    }
+
+    .user {
+    font-size:2rem;
+    }
+
+    .datest,
+    .daterp,
+    .stolen{
+    font-size:2.3rem;
+    }
+
+    .stolen {
+        width: 100%;
+    }
+
+    .blog .post{
+    font-size:2.3rem;
+    }
+
+} 
+
+@media (max-width: 768px) { 
+
+    .topnav .sub-menu {
+    background-color:#11091E;;
+    width:100%;
+    }
+
+    .topnav .allyears{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    }
+
+    .firstfour {
+    margin-bottom:4rem;
+    margin-left:1rem;
+    }
+
+    .nextfour {
+    margin-left:7rem;
+    }
+
+    .prompt {
+    font-size:2rem;
+    padding-top: 4rem;       
+    }
+
+
+}
+
+@media (max-width: 600px) { 
+
+    .topnav a{
+    padding: 0.5rem;
+    }
+
+    .firstfour {
+    margin-bottom:4rem;
+    margin-left:1rem;
+    }
+
+    .nextfour {
+    margin-left:2rem;
+    }
+
+
+    .repeat {
+    width: 112.5%;
+    margin-left:-3rem;
+    }
+
+}
+
+@media (max-width: 560px) { 
+
+    .topnav a{
+    font-size:2rem;
+    }
+
+    .topnav .sub-menu {
+    width: 100%;
+
+    }
+
+    .prompt {
+    font-size:2rem;
+    padding-top: 4rem;       
+    }
+
+    .repeat {
+    width: 109.6%;
+    }
+
+}
+
+@media (max-width: 546px) {
+
+    .topnav .sub-menu {
+    margin-left:-0.4rem;
+    }
+
+    .tim img {
+    display: none;
+    }
+
+    .secondBox {
+    padding: 1rem;
+    padding-top:0rem;
+    }  
+
+    .repeat{
+        margin-left:-2.3rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .topnav .sub-menu {
+        width: 100%;  
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topnav a {
+        padding: 0.7rem;
+    }
+
+    .prompt li{
+        margin-top:-3rem;
+        text-align:left;
+    }
+
+    .prompt a {
+        font-size:2.3rem;
+    }
+
+    .firstfour {
+        margin-left:-1rem;
+        margin-top:0.7rem;
+        
+    }
+
+    .nextfour {
+        margin-left:-1rem;
+        margin-top:-2rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .repeat {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 410px) {
+
+    .repeat {
+        width: 92.5%;
+    }
+
+    .topnav .sub-menu {
+        width: 93.5%;   
+    }   
+
+}
+
+@media (max-width: 384px) {
+
+    .secondBox {
+        padding:0rem;
+        width: 112%;
+        margin:-3rem;
+        margin-top:1rem;
+    }
+
+    .repeat {
+        width: 100%;
+        margin-left:0.8rem;
+    }
+
+    .topnav .sub-menu {
+        width: 112%;
+        margin-left:-2.2rem;
+    }
+
+    .title{
+        font-size:3.5rem;
+    }
+
+
+}

@@ -107,9 +107,8 @@
 
         app.getapp = () => {
             $.ajax({
-            url: 'http://proxy.hackeryou.com', 
+            url: 'https://haveibeenpwned.com/api/v3/breaches/', 
             data:{
-                    reqUrl: 'https://haveibeenpwned.com/api/v3/breaches/', 
                     method: 'GET', 
                     format: 'json'
                     }}).then((result) => {

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- load in google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <!-- load in styles -->
+    <!-- <link rel="stylesheet" href="/styles/style.css"/> -->
+    <title>Cyber Crimes 2017</title>
+
+<style>
+
+html {
+line-height: 1.15;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+body {
+margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+display: block;
+}
+
+h1 {
+font-size: 2em;
+margin: .67em 0;
+}
+
+figcaption, figure, main {
+display: block;
+}
+
+figure {
+margin: 1em 40px;
+}
+
+hr {
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+height: 0;
+overflow: visible;
+}
+
+pre {
+font-family: monospace,monospace;
+font-size: 1em;
+}
+
+a {
+background-color: transparent;
+-webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+border-bottom: none;
+text-decoration: underline;
+-webkit-text-decoration: underline dotted;
+text-decoration: underline dotted;
+}
+
+b, strong {
+font-weight: inherit;
+}
+
+b, strong {
+font-weight: bolder;
+}
+
+code, kbd, samp {
+font-family: monospace,monospace;
+font-size: 1em;
+}
+
+dfn {
+font-style: italic;
+}
+
+mark {
+background-color: #ff0;
+color: #000;
+}
+
+small {
+font-size: 80%;
+}
+
+sub, sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+
+sub {
+bottom: -.25em;
+}
+
+sup {
+top: -.5em;
+}
+
+audio, video {
+display: inline-block;
+}
+
+audio:not([controls]) {
+display: none;
+height: 0;
+}
+
+img {
+border-style: none;
+}
+
+svg:not(:root) {
+overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+font-family: sans-serif;
+font-size: 100%;
+line-height: 1.15;
+margin: 0;
+}
+
+button, input {
+overflow: visible;
+}
+
+button, select {
+text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+-webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+border-style: none;
+padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+outline: 1px dotted ButtonText;
+}
+
+fieldset {
+padding: .35em .75em .625em;
+}
+
+legend {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+color: inherit;
+display: table;
+max-width: 100%;
+padding: 0;
+white-space: normal;
+}
+
+progress {
+display: inline-block;
+vertical-align: baseline;
+}
+
+textarea {
+overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+height: auto;
+}
+
+[type=search] {
+-webkit-appearance: textfield;
+outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+-webkit-appearance: button;
+font: inherit;
+}
+
+details, menu {
+display: block;
+}
+
+summary {
+display: list-item;
+}
+
+canvas {
+display: inline-block;
+}
+
+template {
+display: none;
+}
+
+[hidden] {
+display: none;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: '';
+clear: both;
+height: 0;
+}
+
+html {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+html {
+font-size: 62.5%;
+scroll-behavior: smooth;
+}
+
+/* Below are the general styles - linking different fonts to their elements. */
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+margin: 0;
+padding: 0;
+font-weight: lighter;
+}
+
+body {
+font-family: 'Oswald', sans-serif;
+font-weight: 100;
+color: black;
+background-color: #11091E;
+}
+
+.wrapper {
+max-width: 1250px;
+width: 100%;
+margin: 0 auto;
+}
+
+/* nav */
+.topnav {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+
+.allyears,
+.firstfour,
+.nextfour {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+.topnav .sub-menu {
+list-style: none;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin-bottom: 2rem;
+margin-left: 32rem;
+}
+
+.topnav a {
+text-decoration: none;
+font-size: 2.2rem;
+padding: 0.8rem;
+background-color: #11091E;
+color: #cccccc;
+}
+
+.allyears a:hover {
+background-color: white;
+color: black;
+}
+
+/* below are the styles for the page */
+.container {
+padding: 3rem;
+margin-left: -2.3rem;
+}
+
+.headnews {
+color: #cccccc;
+text-align: center;
+font-size: 2.3rem;
+margin-left: 5.5rem;
+margin-top: -5.3rem;
+padding: 1rem;
+position: fixed;
+font-weight: 300;
+}
+
+.twoBoxes {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+.firstBox {
+width: 19.1rem;
+height: 88%;
+padding: 2rem;
+position: fixed;
+overflow: auto;
+margin-left: 6rem;
+}
+
+.podcastimage {
+width: 15rem;
+height: 15rem;
+margin-bottom: 2rem;
+-webkit-filter: grayscale(1);
+filter: grayscale(1);
+}
+
+.secondBox {
+padding-left: 2rem;
+padding-right: 2rem;
+margin-left: 30rem;
+}
+
+.secondBox .blog {
+margin-bottom: 1rem;
+}
+
+.repeat {
+padding: 2rem;
+margin-bottom: 1rem;
+border: 1px solid black;
+background-color: #cccccc;
+width: 100%;
+}
+
+.tim {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+
+.tim img {
+width: 10rem;
+height: 5rem;
+background-color: black;
+-webkit-filter: grayscale(1);
+filter: grayscale(1);
+}
+
+.title {
+padding-bottom: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+font-size: 3.5rem;
+font-weight: 700;
+background-color: black;
+color: #cccccc;
+}
+
+.user {
+font-size: 2rem;
+color: red;
+}
+
+.datest {
+padding-bottom: 1rem;
+margin-top: 1rem;
+font-size: 2.2rem;
+}
+
+.daterp {
+margin-top: 1rem;
+font-size: 2.2rem;
+}
+
+.stolen {
+padding-bottom: 1rem;
+font-size: 2.2rem;
+word-wrap: break-word;
+word-spacing: 2px;
+width: 70%;
+}
+
+.blog .post {
+padding-bottom: 1rem;
+font-size: 2.2rem;
+word-spacing: 2px;
+}
+
+.bold {
+font-weight: 700;
+}
+
+/* NEW MEDIA */
+@media (max-width: 960px) {
+.firstBox {
+width: 26rem;
+}
+.articleimage {
+width: 100%;
+}
+.secondBox {
+margin-left: 27rem;
+}
+.topnav a {
+padding: 0.55rem;
+}
+.topnav .sub-menu {
+margin-left: 29rem;
+}
+}
+
+/* NEW MEDIA */
+@media (max-width: 890px) {
+.container {
+margin-left: 0.5rem;
+}
+.topnav .sub-menu {
+padding: 1rem;
+margin: 0rem;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+.topnav a {
+font-size: 2.4rem;
+padding: 1rem;
+}
+.headnews {
+display: none;
+}
+.firstBox {
+display: none;
+}
+.secondBox {
+margin: 1rem;
+}
+.repeat {
+width: 100%;
+}
+.title {
+font-size: 4rem;
+}
+.user {
+font-size: 2rem;
+}
+.datest,
+.daterp,
+.stolen {
+font-size: 2.3rem;
+}
+.stolen {
+width: 100%;
+}
+.blog .post {
+font-size: 2.3rem;
+}
+}
+
+@media (max-width: 768px) {
+.topnav .sub-menu {
+background-color: #11091E;
+width: 100%;
+}
+.topnav .allyears {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+padding: 1rem;
+}
+.firstfour {
+margin-bottom: 4rem;
+margin-left: 1rem;
+}
+.nextfour {
+margin-left: 7rem;
+}
+.prompt {
+font-size: 2rem;
+padding-top: 4rem;
+}
+}
+
+@media (max-width: 600px) {
+.topnav a {
+padding: 0.5rem;
+}
+.firstfour {
+margin-bottom: 4rem;
+margin-left: 1rem;
+}
+.nextfour {
+margin-left: 2rem;
+}
+.repeat {
+width: 112.5%;
+margin-left: -3rem;
+}
+}
+
+@media (max-width: 560px) {
+.topnav a {
+font-size: 2rem;
+}
+.topnav .sub-menu {
+width: 100%;
+}
+.prompt {
+font-size: 2rem;
+padding-top: 4rem;
+}
+.repeat {
+width: 109.6%;
+}
+}
+
+@media (max-width: 546px) {
+.topnav .sub-menu {
+margin-left: -0.4rem;
+}
+.tim img {
+display: none;
+}
+.secondBox {
+padding: 1rem;
+padding-top: 0rem;
+}
+.repeat {
+margin-left: -2.3rem;
+}
+}
+
+@media (max-width: 500px) {
+.topnav .sub-menu {
+width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+}
+.topnav a {
+padding: 0.7rem;
+}
+.prompt li {
+margin-top: -3rem;
+text-align: left;
+}
+.prompt a {
+font-size: 2.3rem;
+}
+.firstfour {
+margin-left: -1rem;
+margin-top: 0.7rem;
+}
+.nextfour {
+margin-left: -1rem;
+margin-top: -2rem;
+}
+}
+
+@media (max-width: 500px) {
+.repeat {
+width: 95%;
+}
+}
+
+@media (max-width: 410px) {
+.repeat {
+width: 92.5%;
+}
+.topnav .sub-menu {
+width: 93.5%;
+}
+}
+
+@media (max-width: 384px) {
+.secondBox {
+padding: 0rem;
+width: 112%;
+margin: -3rem;
+margin-top: 1rem;
+}
+.repeat {
+width: 100%;
+margin-left: 0.8rem;
+}
+.topnav .sub-menu {
+width: 112%;
+margin-left: -2.2rem;
+}
+.title {
+font-size: 3.5rem;
+}
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+    <main>
+
+        <section class="container">
+
+            <div class="wrapper">
+    
+                <nav class="topnav">
+    
+                    <ul class="sub-menu">
+        
+                            <section class="prompt">
+        
+                                <li><a>Choose a year<span> ▶ </span></a></li>
+        
+                            </section>
+        
+                            <section class="allyears">
+        
+                                <div class="firstfour">
+                                    <li class="three"><a href="/2013_index.html">2013</a></li>
+                                    <li class="four"><a href="/2014_index.html">2014</a></li>
+                                    <li class="five"><a href="/2015_index.html">2015</a></li>
+                                    <li class="six"><a href="/2016_index.html">2016</a></li>
+                                </div>
+        
+                                <div class="nextfour">
+                                    <li class="seven"><a href="/2017_index.html">2017</a></li>
+                                    <li class="eight"><a href="/2018_index.html">2018</a></li>
+                                    <li class="nine"><a href="/2019_index.html">2019</a></li>
+                                    <li class="twenty"><a href="/2020_index.html">2020</a></li>
+                                </div>
+        
+                            </section>
+                    </ul>								
+    
+                </nav>
+            
+                <section class="twoBoxes">
+
+                    <h1 class="headnews">Cybersecurity Podcasts</h1>
+
+                    <section class="firstBox">
+            
+                        <section class="news">
+
+                            <a href="https://www.listennotes.com/podcasts/darknet-diaries-jack-rhysider-ztuNyvC2F_O/"> <img class="podcastimage" src="/assets/darknet-diaries.jpg"> </a>
+
+                            <a href="https://www.listennotes.com/podcasts/malicious-life-cybereason-iEIF-ZyBgRQ/"> <img class="podcastimage" src="/assets/malicious-life.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/security-now-mp3-twit-WLmHYEzM90y/"><img class="podcastimage" src="/assets/security-now.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/smashing-security-graham-cluley-carole-JrGubIqc0OE/"><img class="podcastimage" src="/assets/smashing-security.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/the-cyberwire-the-cyberwire-vKkUu8BsSbh/"><img class="podcastimage" src="/assets/the-cyberwire.jpg"></a>
+
+                            <a href="https://www.listennotes.com/podcasts/the-privacy-security-osint-show-michael-6rPfc2eLyxt/"><img class="podcastimage" src="/assets/the-privacy-security.jpg"></a>
+
+                        </section>
+            
+                    </section>
+                
+                    <section class="secondBox"> 
+            
+                        <section class="blog">
+
+                        </section>
+            
+                    </section>
+        
+                </section>
+    
+            </div>
+        
+        </section>
+
+    </main>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+<script>
+
+    $(function() {
+    
+    var _0xd65e=["\x69\x6E\x69\x74","\x67\x65\x74\x61\x70\x70","\x64\x69\x73\x70\x6C\x61\x79\x61\x70\x70","\x72\x65\x76\x65\x72\x73\x65","\x44\x61\x74\x61\x43\x6C\x61\x73\x73\x65\x73","\x2C\x20","\x6A\x6F\x69\x6E","\x54\x69\x74\x6C\x65","\x24\x31\x20","\x72\x65\x70\x6C\x61\x63\x65","\x41\x64\x64\x65\x64\x44\x61\x74\x65","\x73\x6C\x69\x63\x65","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x70\x65\x61\x74\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x69\x6D\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x31\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x69\x74\x6C\x65\x22\x3E","\x20\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x75\x73\x65\x72\x22\x3E\x28\x55\x73\x65\x72\x20\x44\x61\x74\x61\x20\x53\x74\x6F\x6C\x65\x6E\x29\x3C\x2F\x73\x70\x61\x6E\x3E\x20\x3C\x2F\x68\x31\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x69\x6D\x67\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6D\x61\x67\x65\x22\x20\x73\x72\x63\x3D","\x4C\x6F\x67\x6F\x50\x61\x74\x68","\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x32\x20\x63\x6C\x61\x73\x73\x3D\x22\x64\x61\x74\x65\x72\x70\x22\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6F\x6C\x64\x22\x3E\x54\x68\x65\x66\x74\x20\x77\x61\x73\x20\x72\x65\x70\x6F\x72\x74\x65\x64\x20\x6F\x6E\x3A\x20\x3C\x2F\x73\x70\x61\x6E\x3E","\x3C\x2F\x68\x32\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x32\x20\x63\x6C\x61\x73\x73\x3D\x22\x64\x61\x74\x65\x73\x74\x22\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6F\x6C\x64\x22\x3E\x44\x61\x74\x61\x20\x77\x61\x73\x20\x73\x74\x6F\x6C\x65\x6E\x20\x6F\x6E\x3A\x20\x3C\x2F\x73\x70\x61\x6E\x3E","\x42\x72\x65\x61\x63\x68\x44\x61\x74\x65","\x3C\x2F\x68\x32\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x33\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x74\x6F\x6C\x65\x6E\x22\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6F\x6C\x64\x22\x3E\x54\x68\x65\x20\x68\x61\x63\x6B\x65\x72\x73\x20\x73\x74\x6F\x6C\x65\x3A\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20","\x3C\x2F\x68\x33\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x70\x20\x63\x6C\x61\x73\x73\x3D\x22\x70\x6F\x73\x74\x22\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6F\x6C\x64\x22\x3E\x53\x75\x6D\x6D\x61\x72\x79\x20\x6F\x66\x20\x74\x68\x65\x20\x68\x61\x63\x6B\x3A\x20\x3C\x2F\x73\x70\x61\x6E\x3E\x20","\x44\x65\x73\x63\x72\x69\x70\x74\x69\x6F\x6E","\x3C\x2F\x70\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E","\x61\x70\x70\x65\x6E\x64","\x2E\x62\x6C\x6F\x67","\x66\x6F\x72\x45\x61\x63\x68","\x74\x68\x65\x6E","\x68\x74\x74\x70\x3A\x2F\x2F\x70\x72\x6F\x78\x79\x2E\x68\x61\x63\x6B\x65\x72\x79\x6F\x75\x2E\x63\x6F\x6D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x61\x76\x65\x69\x62\x65\x65\x6E\x70\x77\x6E\x65\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x76\x33\x2F\x62\x72\x65\x61\x63\x68\x65\x73\x2F","\x47\x45\x54","\x6A\x73\x6F\x6E","\x61\x6A\x61\x78","\x73\x6F\x72\x74"];const app={};$(function(){app[_0xd65e[0]]()});app[_0xd65e[0]]= function(){app[_0xd65e[1]]()};app[_0xd65e[1]]= ()=>{$[_0xd65e[30]]({url:_0xd65e[26],data:{reqUrl:_0xd65e[27],method:_0xd65e[28],format:_0xd65e[29]}})[_0xd65e[25]]((_0x4617x2)=>{app[_0xd65e[2]](_0x4617x2);let _0x4617x3=(_0x4617x2[_0xd65e[3]]());_0x4617x3[_0xd65e[24]]((_0x4617x4)=>{let _0x4617x5=_0x4617x4[_0xd65e[4]];let _0x4617x6=_0x4617x5[_0xd65e[6]](_0xd65e[5]);let _0x4617x7=_0x4617x4[_0xd65e[7]];let _0x4617x8=_0x4617x7[_0xd65e[9]](/([a-zA-Z])[0-9](?=[A-Z])/g,_0xd65e[8]);let _0x4617x9=_0x4617x4[_0xd65e[10]];let _0x4617xa=_0x4617x9[_0xd65e[11]](0,10);let _0x4617xb=_0x4617xa[_0xd65e[11]](0,4);if(_0x4617xb== 2017){$(_0xd65e[23])[_0xd65e[22]](`${_0xd65e[12]}${_0x4617x8}${_0xd65e[13]}${_0x4617x4[_0xd65e[14]]}${_0xd65e[15]}${_0x4617xa}${_0xd65e[16]}${_0x4617x4[_0xd65e[17]]}${_0xd65e[18]}${_0x4617x6}${_0xd65e[19]}${_0x4617x4[_0xd65e[20]]}${_0xd65e[21]}`)}})})};app[_0xd65e[2]]= function(_0x4617xc){_0x4617xc[_0xd65e[31]]((_0x4617xd,_0x4617xe)=>(_0x4617xd[_0xd65e[10]]> _0x4617xe[_0xd65e[10]])?1:-1)}
+    
+    
+    });
+</script>
+
+</body>
+</html>

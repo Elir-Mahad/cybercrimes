@@ -430,6 +430,11 @@ font-weight: 700;
     .user {
     font-size:1.5rem;
     }
+    
+    .daterp,
+    .datest {
+        width: 70%;
+    }
 
 }
 

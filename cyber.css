@@ -1,0 +1,489 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+html {
+font-size: 62.5%;
+scroll-behavior: smooth;
+}
+
+/* Below are the general styles - linking different fonts to their elements. */
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+margin: 0;
+padding: 0;
+font-weight: lighter;
+}
+
+body {
+font-family: 'Inconsolata', monospace;
+font-weight: 100;
+color:black;
+background-color: #11091E;
+}
+
+.wrapper {
+max-width: 1250px;
+width: 100%;
+margin: 0 auto;
+}
+
+/* nav */
+
+/* nav */
+
+.topnav{
+position:sticky;
+top:0;
+z-index: 2;
+}
+
+.allyears,
+.firstfour,
+.nextfour{
+display: flex;
+}
+
+.topnav .sub-menu {
+list-style: none;
+display: flex;
+margin-bottom:2rem;
+margin-left:31rem;
+}
+
+.prompt span {
+font-size:1.5rem;
+}
+
+.topnav a {
+text-decoration: none;
+font-size:2.2rem;
+padding: 0.6rem;
+background-color:#11091E;
+color:#cccccc;
+}
+
+.allyears a:hover {
+background-color:white;
+color:black;  
+}
+
+/* main */
+
+.container{
+padding:3rem;
+margin-left:-2.3rem; 
+}
+
+
+.headnews{
+color:#cccccc;
+text-align: center;
+font-size: 2.2rem;
+margin-left:2.3rem;
+margin-top:-5.4rem;
+padding: 1rem;
+position:fixed;
+font-weight:300;
+}
+
+.twoBoxes {
+display:flex;
+}
+
+.firstBox {
+width: 19.1rem;
+height: 88%;
+padding:2rem;
+position:fixed;
+overflow: auto;
+margin-left:6rem;
+}
+
+.podcastimage{
+width:15rem;
+height:15rem;
+margin-bottom:2rem;
+filter: grayscale(1);
+}
+
+.secondBox{
+padding-left: 2rem;
+padding-right: 2rem;
+margin-left:30rem;
+}
+
+.secondBox .blog{
+margin-bottom:1rem;
+}
+
+.repeat{
+padding:2rem;
+margin-bottom:1rem;
+border:1px solid black;
+background-color: #cccccc;
+width:100%;
+}
+
+.tim{
+display:flex;
+justify-content:space-between;
+}
+
+.tim img {
+width:10rem;
+height:5rem;
+background-color:black;
+filter: grayscale(1);
+z-index: 1;
+
+}
+
+.title{
+padding-bottom:1rem;
+padding-left:1rem;
+padding-right:1rem;
+font-size:3.5rem;
+font-weight: 700;
+background-color:black;
+color:#cccccc;
+}
+
+.user {
+font-size:2rem;
+color:red;
+}
+
+.datest{
+padding-bottom:1rem;
+margin-top:1rem;
+font-size:2.2rem;
+}
+
+.daterp{
+margin-top:1rem;
+font-size:2.2rem;
+}
+
+.stolen{
+padding-bottom:1rem;
+font-size:2.2rem;
+word-wrap: break-word;
+word-spacing:2px;
+width:70%;
+}
+
+.blog .post{
+padding-bottom:1rem;
+font-size:2.2rem;
+word-spacing:2px;
+}
+
+.bold {
+font-weight: 700;
+}
+
+/* MEDIA  */
+
+@media (max-width: 972px) {
+
+    .firstBox {
+    width: 26rem;;
+    }  
+
+    .articleimage{
+    width:100%;
+    }   
+    .secondBox {
+    margin-left:27rem;
+    }
+
+    .topnav a {
+    padding:0.4rem; 
+    }
+
+    .topnav .sub-menu{
+    margin-left:29rem;
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    .container{
+    margin-left:0.5rem;
+    }
+
+    .topnav .sub-menu {
+    padding:1rem;
+    margin:0rem;
+    justify-content: center;
+    }
+
+    .topnav a {
+    font-size:2.3rem;
+    padding: 1.1rem;
+    }
+
+    .headnews {
+    display: none;
+    }
+
+    .firstBox {
+    display: none;
+    }
+
+    .secondBox {
+    margin:1rem;
+    }
+
+    .repeat {
+    width: 100%;
+    }
+
+    .title{
+    font-size:4rem;
+    }
+
+    .user {
+    font-size:2rem;
+    }
+
+    .datest,
+    .daterp,
+    .stolen{
+    font-size:2.3rem;
+    }
+
+    .stolen {
+    width: 100%;
+    }
+
+    .blog .post{
+    font-size:2.3rem;
+    }
+
+} 
+
+@media (max-width: 830px) { 
+
+    .topnav a {
+    font-size:2rem;
+    padding: 1.1rem;
+    }
+
+
+}
+
+@media (max-width: 768px) { 
+
+    .topnav .sub-menu {
+    background-color:#11091E;;
+    width:100%;
+    }
+
+    .topnav a {
+    font-size:2.4rem;
+    }
+
+    .topnav .allyears{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    }
+
+    .firstfour {
+    margin-bottom:4rem;
+    margin-left:1rem;
+    }
+
+    .nextfour {
+    margin-left:7rem;
+    }
+
+    .prompt {
+    font-size:2rem;
+    padding-top: 4rem;       
+    }
+
+}
+
+@media (max-width: 650px) { 
+
+    .topnav a{
+    padding: 0.5rem;
+    }
+
+    .firstfour {
+    margin-bottom:4rem;
+    margin-left:1rem;
+    }
+
+    .nextfour {
+    margin-left:2rem;
+    }
+
+
+    .repeat {
+    width: 105%;
+    margin-left:-3rem;
+    }
+
+}
+
+@media (max-width: 600px) { 
+
+    .topnav .sub-menu {
+    width: 100%;
+    }
+
+    .prompt {
+    font-size:2rem;
+    padding-top: 4rem;       
+    }
+
+    .repeat {
+    width: 112%;
+    }
+
+    .title{
+    font-size:3.5rem;
+    }
+
+}
+
+@media (max-width: 546px) {
+
+    .topnav .sub-menu {
+    margin-left:-0.4rem;
+    }
+
+    .tim img {
+    display: none;
+    }
+
+    .secondBox {
+    padding: 1rem;
+    padding-top:0rem;
+    }  
+
+    .repeat{
+    margin-left:-2.3rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+.topnav .sub-menu {
+    width: 106.5%;  
+    display: flex;
+    flex-direction: column;
+    }
+
+    .topnav a {
+    padding: 0.7rem;
+    }
+
+    .prompt li{
+    margin-top:-3rem;
+    text-align:left;
+    }
+
+    .prompt a {
+    font-size:2.3rem;
+    }
+
+    .firstfour {
+    margin-left:-1rem;
+    margin-top:0.7rem;
+
+    }
+
+    .nextfour {
+    margin-left:-1rem;
+    margin-top:-2rem;
+    }
+
+    .repeat {
+    width: 105%;
+    }
+
+    .title{
+    font-size: 3rem;
+    padding: 0.5rem;
+    }
+
+    .user {
+    font-size:1.5rem;
+    }
+
+}
+
+
+@media (max-width: 384px) {
+
+    .secondBox {
+    padding:0rem;
+    width: 112%;
+    margin:-3rem;
+    margin-top:1rem;
+    }
+
+    .repeat {
+    width: 100%;
+    margin-left:0.9rem;
+    }
+
+    .topnav .sub-menu {
+    width: 112%;
+    margin-left:-2.2rem;
+    }
+
+    .title{
+    font-size:3.3rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .bold{
+    font-size:2.1rem;
+    }
+
+    .daterp,
+    .datest,
+    .stolen,
+    .secondBox .post{
+    font-size:2.1rem;
+    }
+
+    .title{
+    font-size:2.8rem;
+    }
+    
+    .repeat {
+        margin-left: 1.09rem
+    }
+    
+    .topnav .sub-menu {
+        margin-left:-2rem;
+    }
+
+
+}
+

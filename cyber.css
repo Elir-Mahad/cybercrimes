@@ -456,6 +456,10 @@ font-weight: 700;
     .title{
     font-size:3.3rem;
     }
+    
+    .shoutout {
+        display: none;
+    }
 
 }
 

@@ -307,6 +307,7 @@ body {
 
 /* nav */
 .topnav {
+	background-color: #11091e;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -462,7 +463,8 @@ body {
 	color: black;
 }
 
-/* NEW MEDIA */
+/* media queries  */
+
 @media (max-width: 960px) {
 	.firstBox {
 		width: 26rem;
@@ -481,7 +483,6 @@ body {
 	}
 }
 
-/* NEW MEDIA */
 @media (max-width: 890px) {
 	.container {
 		margin-left: 0.5rem;
@@ -637,8 +638,12 @@ body {
 }
 
 @media (max-width: 500px) {
+	.title {
+		font-size: 3rem;
+	}
+
 	.repeat {
-		width: 95%;
+		width: 113%;
 	}
 }
 
@@ -665,8 +670,5 @@ body {
 	.topnav .sub-menu {
 		width: 112%;
 		margin-left: -2.2rem;
-	}
-	.title {
-		font-size: 3.5rem;
 	}
 }

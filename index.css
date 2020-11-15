@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color: #2f2f2f;
 }
 
 .l_container {
@@ -7,18 +7,20 @@ body {
 	font-family: "Changa", sans-serif;
 }
 
-.firstbox_l {
-	background-color: #11091e;
-	color: lightgray;
-	padding-bottom: 3rem;
-}
-
 .topleft {
-	background-color: black;
-	color: lightgray;
+	background-color: #2f2f2f;
+	border-bottom: 1px groove white;
+	color: white;
 	margin-bottom: 2rem;
 	margin-top: 0rem;
 	padding: 0.5rem;
+}
+
+.firstbox_l {
+	background-color: #11091e;
+	border-bottom: 1px groove white;
+	color: white;
+	padding-bottom: 3rem;
 }
 
 .questionone {
@@ -40,13 +42,12 @@ body {
 .firstbox_l img {
 	display: block;
 	margin: auto;
-	height: 20rem;
-	border-radius: 3rem;
-	filter: grayscale(1);
+	height: 30rem;
 }
 
 .secondbox_l {
 	background-color: black;
+	border-bottom: 1px groove white;
 	color: white;
 }
 
@@ -103,8 +104,8 @@ body {
 
 .shoutout {
 	padding: 0.5rem;
-	background-color: #190e2e;
-	color: beige;
+	background-color: #2f2f2f;
+	color: white;
 	text-align: center;
 	margin: 0rem;
 	font-size: 1rem;

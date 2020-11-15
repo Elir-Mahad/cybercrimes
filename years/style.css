@@ -359,6 +359,10 @@ body {
 	padding: 1rem;
 	position: fixed;
 	font-weight: 300;
+	z-index: 3;
+	/* added this because the the fact that i gave the topnav the blue background, 
+	made this tag disappear, because the topnav overlaps it. 
+	The z-index will ensure that this element will always appear on top.  */
 }
 
 .twoBoxes {
@@ -426,7 +430,6 @@ body {
 	background-color: black;
 	color: #cccccc;
 	border-radius: 10px;
-	text-align: center;
 }
 
 .user {

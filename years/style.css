@@ -645,6 +645,16 @@ body {
 	.repeat {
 		width: 113%;
 	}
+
+	.daterp .bold:after {
+		content: "\a";
+		white-space: pre;
+	}
+
+	.datest .bold:after {
+		content: "\a";
+		white-space: pre;
+	}
 }
 
 @media (max-width: 410px) {

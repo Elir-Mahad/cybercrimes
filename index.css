@@ -1,0 +1,203 @@
+body {
+	background-color: black;
+}
+
+.l_container {
+	margin: -0.5rem;
+	font-family: "Changa", sans-serif;
+}
+
+.firstbox_l {
+	background-color: #11091e;
+	color: lightgray;
+	padding-bottom: 3rem;
+}
+
+.topleft {
+	background-color: black;
+	color: lightgray;
+	margin-bottom: 2rem;
+	margin-top: 0rem;
+	padding: 0.5rem;
+}
+
+.questionone {
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.questionone span {
+	text-decoration: line-through white;
+	background-color: black;
+	border-radius: 50%;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: purple;
+}
+
+.firstbox_l img {
+	display: block;
+	margin: auto;
+	height: 20rem;
+	border-radius: 3rem;
+	filter: grayscale(1);
+}
+
+.secondbox_l {
+	background-color: black;
+	color: white;
+}
+
+.secondbox_l .box-inner {
+	padding: 3rem;
+}
+
+.secondbox_l p {
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.secondbox_l span {
+	color: purple;
+}
+
+.shocksites,
+.shockpeople,
+.stolenshit {
+	display: block;
+	margin: auto;
+	padding-bottom: 1rem;
+}
+
+.secondbox_l .shocksites {
+	text-align: left;
+}
+
+.secondbox_l .shockpeople {
+	text-align: right;
+}
+
+.secondbox_l .stolenshit {
+	text-align: center;
+	width: 55%;
+	background-color: #cccccc;
+	color: black;
+	padding: 0.5rem;
+	border-radius: 3rem;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.enter a {
+	text-decoration: none;
+	color: white;
+	border: 1px solid black;
+	border-radius: 3rem;
+	border: transparent;
+	background-color: purple;
+	padding: 1rem;
+	font-size: 1.3rem;
+}
+
+.shoutout {
+	padding: 0.5rem;
+	background-color: #190e2e;
+	color: beige;
+	text-align: center;
+	margin: 0rem;
+	font-size: 1rem;
+}
+
+/* media quries */
+
+@media (max-width: 1100px) {
+	.secondbox_l {
+		padding: 1.9rem;
+	}
+}
+
+@media (max-width: 860px) {
+	.secondbox_l .shockpeople,
+	.secondbox_l .shocksites {
+		width: 85%;
+		font-size: 2rem;
+	}
+
+	.secondbox_l .stolenshit {
+		width: 80%;
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.questionone {
+		font-size: 5rem;
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+
+	.questionone span {
+		padding: 0rem;
+	}
+
+	.firstbox_l img {
+		margin-top: 2rem;
+		height: 15rem;
+	}
+
+	.secondbox_l .shocksites {
+		border-bottom: 1px solid white;
+	}
+
+	.secondbox_l .shockpeople {
+		border-bottom: 1px solid white;
+		padding-bottom: 0.5rem;
+	}
+
+	.secondbox_l .stolenshit {
+		margin-top: 1.5rem;
+	}
+}
+
+@media (max-width: 414px) {
+	.secondbox_l .shocksites,
+	.secondbox_l .shockpeople,
+	.secondbox_l .stolenshit {
+		width: 100%;
+	}
+
+	.secondbox_l .stolenshit {
+		margin-left: -1rem;
+	}
+}
+
+@media (max-width: 384px) {
+	.firstbox_l img {
+		height: 12rem;
+	}
+
+	.secondbox_l .stolenshit {
+		font-size: 1.3rem;
+	}
+
+	.questionone {
+		font-size: 4.5rem;
+	}
+
+	.firstbox_l img {
+		height: 10rem;
+	}
+
+	.secondbox_l .shocksites,
+	.secondbox_l .shockpeople {
+		font-size: 2rem;
+	}
+
+	.secondbox_l {
+		padding: 0em;
+	}
+}

@@ -46,7 +46,6 @@ body {
 
 .secondbox_l {
 	background-color: black;
-	border-bottom: 1px groove white;
 	color: white;
 }
 
@@ -95,18 +94,19 @@ body {
 	color: white;
 	border: 1px solid black;
 	border-radius: 3rem;
-	border: transparent;
 	background-color: purple;
-	padding: 1rem;
+	padding: 1.5rem;
 	font-size: 1.3rem;
 }
 
 .shoutout {
 	padding: 0.5rem;
 	background-color: #2f2f2f;
+	border-top: 1px groove white;
 	color: white;
 	text-align: center;
 	margin: 0rem;
+	margin-top: -1rem;
 	font-size: 1rem;
 }
 

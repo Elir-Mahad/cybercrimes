@@ -112,6 +112,8 @@ body {
 
 /* media quries */
 
+/* media quries */
+
 @media (max-width: 1100px) {
 	.secondbox_l {
 		padding: 1.9rem;
@@ -119,6 +121,10 @@ body {
 }
 
 @media (max-width: 860px) {
+	.firstbox_l img {
+		height: 25rem;
+	}
+
 	.secondbox_l .shockpeople,
 	.secondbox_l .shocksites {
 		width: 85%;
@@ -199,5 +205,12 @@ body {
 
 	.secondbox_l {
 		padding: 0em;
+	}
+}
+
+@media (max-width: 360px) {
+	.enter a {
+		padding: 1rem;
+		font-size: 1.2rem;
 	}
 }

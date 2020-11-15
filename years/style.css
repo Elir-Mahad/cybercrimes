@@ -643,9 +643,7 @@ body {
 		margin-left: -1rem;
 		margin-top: -2rem;
 	}
-}
 
-@media (max-width: 500px) {
 	.title {
 		font-size: 3rem;
 	}

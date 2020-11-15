@@ -292,7 +292,8 @@ p {
 }
 
 body {
-	font-family: "Inconsolata", monospace;
+	/* font-family: "Inconsolata", monospace; */
+	font-family: "EB Garamond", serif;
 	font-weight: 100;
 	color: black;
 	background-color: #11091e;

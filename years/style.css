@@ -420,13 +420,12 @@ body {
 }
 
 .title {
-	padding-bottom: 1rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
 	font-size: 3.5rem;
-	font-weight: 700;
+	padding: 1rem;
 	background-color: black;
 	color: #cccccc;
+	border-radius: 10px;
+	text-align: center;
 }
 
 .user {

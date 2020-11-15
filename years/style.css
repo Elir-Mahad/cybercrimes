@@ -432,13 +432,13 @@ body {
 	color: red;
 }
 
-.datest {
-	padding-bottom: 1rem;
+.daterp {
 	margin-top: 1rem;
 	font-size: 2.2rem;
 }
 
-.daterp {
+.datest {
+	padding-bottom: 1rem;
 	margin-top: 1rem;
 	font-size: 2.2rem;
 }
@@ -458,7 +458,7 @@ body {
 }
 
 .bold {
-	font-weight: 700;
+	color: rgb(80, 80, 190);
 }
 
 /* NEW MEDIA */

@@ -434,6 +434,11 @@ body {
 	color: red;
 }
 
+.user:before {
+	content: "\a";
+	white-space: pre;
+}
+
 .daterp {
 	margin-top: 1rem;
 	font-size: 2.2rem;

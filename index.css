@@ -8,7 +8,7 @@ body {
 }
 
 .topleft {
-	background-color: #2f2f2f;
+	background-color: black;
 	border-bottom: 1px groove white;
 	color: white;
 	margin-bottom: 2rem;
@@ -17,7 +17,6 @@ body {
 }
 
 .firstbox_l {
-	background-color: #11091e;
 	border-bottom: 1px groove white;
 	color: white;
 	padding-bottom: 3rem;
